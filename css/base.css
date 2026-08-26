@@ -229,6 +229,7 @@ a.chip:hover{border-color:var(--bronze);color:var(--bronze)}
 .page-hero .crumbs{margin-top:1.4rem;justify-content:center;color:#8C969F}
 .page-hero .crumbs a:hover{color:#B08D57}
 .page-hero .crumbs [aria-current]{color:#F4F3EF}
+.page-hero .crumbs .sep{color:rgba(140,150,159,.45)}
 .page-hero .legal-meta{color:#8C969F}
 .page-hero .legal-meta b{color:#ECEEF1}
 .page-hero .ghost-word{inset-inline-end:-2%;bottom:-24%;opacity:.55;-webkit-text-stroke-color:rgba(140,150,159,.28)}
