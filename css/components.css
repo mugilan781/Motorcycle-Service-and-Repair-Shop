@@ -154,6 +154,8 @@ body.lock{overflow:hidden}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;padding-block:clamp(3.5rem,7vw,5.5rem)}
 .stats-band .stats-grid{padding-block:0;text-align:center}
 .stats-band .stat{text-align:center}
+.stats-inline .stats-grid{padding-block:clamp(2rem,4vw,3.2rem);text-align:center;justify-items:center}
+.stats-inline .stat{text-align:center}
 .stat b{display:block;font:700 clamp(2.4rem,4.6vw,3.6rem)/1 var(--font-d);color:#F4F3EF;font-variant-numeric:tabular-nums}
 .stat b em{font-style:normal;color:var(--accent-2)}
 .stat>span{display:block;margin-top:.55rem;font:600 .72rem/1.4 var(--font-d);letter-spacing:.18em;text-transform:uppercase;color:rgba(244,243,239,.62)}
