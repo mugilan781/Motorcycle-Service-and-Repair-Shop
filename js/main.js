@@ -34,7 +34,7 @@
     d.querySelectorAll('[data-toggle="dir"]').forEach(b => {
       b.setAttribute("aria-pressed", String(dir === "rtl"));
       const l = b.querySelector(".dir-lbl");
-      if (l) l.textContent = dir === "rtl" ? "EN" : "AR";
+      if (l) l.textContent = dir === "rtl" ? "LTR" : "RTL";
     });
     root.dispatchEvent(new CustomEvent("amw:dir"));
   };
