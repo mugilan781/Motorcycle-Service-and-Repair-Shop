@@ -131,7 +131,7 @@ html{scrollbar-width:thin;scrollbar-color:var(--gunmetal) var(--bg)}
 .btn-primary:hover{background:#A81F1F;transform:translateY(-2px)}
 .btn-ghost{border-color:var(--line-strong);color:var(--text)}
 .btn-ghost:hover{border-color:var(--bronze);color:var(--bronze);transform:translateY(-2px)}
-.btn-bronze{background:var(--bronze);color:#14181D}
+.btn-bronze{background:var(--bronze);color:#ffffff}
 .btn-bronze:hover{background:var(--bronze-2);transform:translateY(-2px)}
 .btn-light{background:var(--pearl);color:#0D1117}
 .btn-light:hover{background:#fff;transform:translateY(-2px)}
