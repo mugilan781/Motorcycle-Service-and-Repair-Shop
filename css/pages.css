@@ -95,9 +95,9 @@
 .upgrade-list{display:grid;gap:1.6rem;max-width:720px;margin-inline:auto}
 
 .stats-inline{background-image:radial-gradient(var(--dot) 1px,transparent 1px);background-size:22px 22px}
-.stats-inline .stat b{color:var(--text)}
-.stats-inline .stat b em{color:var(--accent-2);font-style:normal}
-.stats-inline .stat span{color:var(--muted)}
+.stats-inline .stat b,.stat.stats-inline b{color:var(--text)}
+.stats-inline .stat b em,.stat.stats-inline b em{color:var(--accent-2);font-style:normal}
+.stats-inline .stat>span,.stat.stats-inline>span{color:var(--muted)}
 .ph-cap.is-on{transform:none}
 
 @media (max-width:1020px){
