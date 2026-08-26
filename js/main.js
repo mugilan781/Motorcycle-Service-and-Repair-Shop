@@ -2,6 +2,7 @@
   "use strict";
   const d = document;
   const root = d.documentElement;
+  root.classList.add("js-live");
   const revealPage = () => { if (d.body) d.body.classList.add("ready"); };
   if (d.readyState === "loading") d.addEventListener("DOMContentLoaded", revealPage);
   else revealPage();
