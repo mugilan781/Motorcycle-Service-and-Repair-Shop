@@ -277,9 +277,9 @@ body.lock{overflow:hidden}
 .cta-phone b{display:block;font:700 1.35rem/1 var(--font-d)}
 .cta-phone span{font-size:.8rem;color:var(--muted)}
 
-.info-card{padding:1.7rem;display:grid;gap:1rem}
+.info-card{padding:1.7rem;display:flex;flex-direction:column;align-items:flex-start;gap:.8rem;height:100%}
 .info-card h3{font-size:1.1rem}
-.info-card p,.info-card a{color:var(--muted);font-size:.93rem}
+.info-card p,.info-card a{color:var(--muted);font-size:.93rem;word-break:break-word}
 .info-card a:hover{color:var(--bronze)}
 
 .map-wrap{position:relative;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--line);min-height:420px}

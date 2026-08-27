@@ -182,7 +182,10 @@
           </div>
           <div class="field"><label for="apNotes">Anything Else?</label><textarea id="apNotes" placeholder="Noises, warning lights, history we should know about…"></textarea></div>
         </fieldset>
-        <label class="check" style="margin-bottom:1.4rem"><input type="checkbox" required>I agree to be contacted about this booking as described in the <a href="privacy.html" style="color:var(--bronze)">Privacy Policy</a>. *</label>
+        <label class="check" style="margin-bottom:1.4rem">
+          <input type="checkbox" required>
+          <span>I agree to be contacted about this booking as described in the <a href="privacy.html" style="color:var(--bronze)">Privacy Policy</a>. *</span>
+        </label>
         <button type="submit" class="btn btn-primary btn-lg btn-block">Request Appointment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
       </div>
       <div class="form-ok">
@@ -197,20 +200,17 @@
 
 <section class="section">
   <div class="container">
-    <div class="head-row">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Workshop Location</p>
-        <h2 class="sec-title">South Loop, Behind the <span class="hl">Silver Silos</span></h2>
-      </div>
-      <span class="sec-num" aria-hidden="true">04</span>
+    <div class="sec-head reveal centered">
+      <p class="eyebrow">Workshop Location</p>
+      <h2 class="sec-title">South Loop, Behind the <span class="hl">Silver Silos</span></h2>
     </div>
     <div class="map-wrap reveal">
-      <iframe title="Map showing ApexMoto at 217 Torque Avenue, Chicago" src="https://www.openstreetmap.org/export/embed.html?bbox=-87.6620%2C41.8430%2C-87.6180%2C41.8670&layer=mapnik&marker=41.8550%2C-87.6400" loading="lazy"></iframe>
+      <iframe title="Google Map showing ApexMoto at 217 Torque Avenue, Chicago" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.2188439401764!2d-87.62584142345455!3d41.85501897124483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c8172c91cf9%3A0xa6184511d73507c5!2s217%20Torque%20Ave%2C%20Chicago%2C%20IL%2060616!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" loading="lazy" style="border:0;width:100%;height:100%"></iframe>
       <div class="map-card">
         <b>ApexMoto</b>
         <p>217 Torque Avenue, Unit 9<br>Chicago, IL 60616</p>
         <p style="margin-top:.4rem">Green roll-up doors · "AMW" blade sign · rider parking left of Bay 03.</p>
-        <a class="link-arrow" href="https://www.openstreetmap.org/?mlat=41.8550&mlon=-87.6400#map=16/41.8550/-87.6400" target="_blank" rel="noopener">Get Directions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        <a class="link-arrow" href="https://maps.google.com/?q=217+Torque+Avenue+Chicago+IL+60616" target="_blank" rel="noopener">Get Directions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
@@ -221,11 +221,11 @@
     <div class="reveal" style="position:sticky;top:calc(var(--nav-h) + 2rem)">
       <p class="eyebrow">Practical Questions</p>
       <h2 class="sec-title">Visiting Us,<br><span class="hl">Answered Fast</span></h2>
-      <div class="btn-row" style="margin-top:1.4rem"><a href="#book" class="btn btn-primary">Back to Booking</a></div>
+      <div class="btn-row" style="margin-top:1.4rem;justify-content:flex-start"><a href="#book" class="btn btn-primary">Back to Booking</a></div>
     </div>
     <div data-acc class="reveal">
-      <div class="acc-item open">
-        <h3 style="margin:0"><button class="acc-head" aria-expanded="true">Is there parking for riders and trailers?<span class="acc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button></h3>
+      <div class="acc-item">
+        <h3 style="margin:0"><button class="acc-head" aria-expanded="false">Is there parking for riders and trailers?<span class="acc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button></h3>
         <div class="acc-panel"><div class="acc-inner"><p>Ten dedicated bike spots sit left of Bay 03, plus room for two trailers along the east fence. If you're trailering in, call ahead and we'll have the ramp gate open when you arrive.</p></div></div>
       </div>
       <div class="acc-item">
@@ -239,28 +239,6 @@
       <div class="acc-item">
         <h3 style="margin:0"><button class="acc-head" aria-expanded="false">What if my bike can't be collected during open hours?<span class="acc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button></h3>
         <div class="acc-panel"><div class="acc-inner"><p>Covered storage is free for up to seven days after handback, and evening pickups until 20:30 can be arranged with a day's notice. Nothing leaves the floor without your signature, however late you are.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-tight">
-  <div class="container split rev" style="align-items:center">
-    <div class="door reveal" role="img" aria-label="Illustration of the Apex workshop shutter doors at Bay 03">
-      <span class="lamp-row" aria-hidden="true"><i></i><i></i><i></i></span>
-    </div>
-    <div class="reveal">
-      <p class="eyebrow">Come Say Hi</p>
-      <h2 class="sec-title">The Kettle's On,<br>The <span class="hl">Doors Are Up</span></h2>
-      <p class="lead" style="margin-top:1rem">No appointment needed for quotes, tyre pressure checks or just talking torque specs over coffee. Walk-ins welcome all week.</p>
-      <ul class="list-check" style="margin-top:1.4rem">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg><span><b>Rider lounge</b> overlooking Bays 01–02, espresso &amp; Wi-Fi</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg><span><b>Helmet &amp; glove fitting corner</b> by the counter</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg><span><b>Dog-friendly floor</b> — water bowls by the door</span></li>
-      </ul>
-      <div class="btn-row">
-        <a href="https://www.openstreetmap.org/?mlat=41.8550&mlon=-87.6400#map=16/41.8550/-87.6400" target="_blank" rel="noopener" class="btn btn-bronze">Open in Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
-        <a href="tel:+13125550147" class="btn btn-ghost">(312) 555-0147</a>
       </div>
     </div>
   </div>
