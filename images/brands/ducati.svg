@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <path d="M100 10 C60 10 20 25 20 50 C20 130 65 200 100 230 C135 200 180 130 180 50 C180 25 140 10 100 10 Z" fill="#CC0000"/>
+  <path d="M100 16 C65 16 30 29 30 52 C30 125 70 190 100 218 C130 190 170 125 170 52 C170 29 135 16 100 16 Z" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <path d="M36 50 C60 40 140 40 164 50 C145 64 95 70 36 50 Z" fill="#FFFFFF"/>
+  <text x="100" y="145" font-family="'Space Grotesk', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">DUCATI</text>
+</svg>

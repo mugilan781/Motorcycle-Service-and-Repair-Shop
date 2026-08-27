@@ -73,9 +73,12 @@
 .legal-meta{display:inline-flex;gap:1.6rem;flex-wrap:wrap;font-size:.82rem;color:var(--muted);margin-top:1.2rem}
 .legal-meta b{color:var(--text)}
 
-.brand-hero-logos{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
-.matrix-note{display:flex;gap:.6rem;align-items:center;color:var(--muted);font-size:.84rem;margin-top:1rem;padding:0 1.2rem 1rem}
-.matrix-note svg{width:15px;height:15px;color:#3FB950}
+.brand-hero-logos{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2rem}
+.matrix-note{display:flex;gap:.6rem;align-items:center;justify-content:center;color:var(--muted);font-size:.84rem;margin-top:1.4rem;padding:0 1.2rem 1rem;text-align:center}
+.matrix-note svg{width:15px;height:15px;color:#3FB950;flex-shrink:0}
+@media (max-width:1180px){.brand-hero-logos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:768px){.brand-hero-logos{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.brand-hero-logos{grid-template-columns:1fr}}
 
 .pricing-tables{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;align-items:start}
 .addon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
