@@ -6,19 +6,16 @@
 <title>Scheduled Maintenance — ApexMoto</title>
 <meta name="description" content="ApexMoto is currently undergoing scheduled maintenance. We will be back online shortly.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D1117'/%3E%3Cpath d='M16 5.5l9 5.2v10.6l-9 5.2-9-5.2V10.7z' fill='none' stroke='%23B08D57' stroke-width='1.8'/%3E%3Cpath d='M12.4 21L16 11l3.6 10M13.7 17.6h4.6' fill='none' stroke='%23C62828' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
-<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("amw-theme");if(t)document.documentElement.dataset.theme=t;var dr=localStorage.getItem("amw-dir");if(dr)document.documentElement.setAttribute("dir",dr)}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/pages.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at 50% 10%, #15222E 0%, #0B1219 100%);
+  background: radial-gradient(circle at 50% 10%, #1A0D11 0%, #0D1117 100%);
   color: #F4F3EF;
-  font-family: var(--font-b);
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
   padding: 3rem 1.2rem 4rem;
   display: flex;
   flex-direction: column;
@@ -33,16 +30,16 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  font: 700 1.5rem/1 var(--font-d);
+  font: 700 1.5rem/1 'Space Grotesk', sans-serif;
   color: #fff;
   text-decoration: none;
   margin-bottom: 2.5rem;
 }
-.maint-logo b { color: var(--accent); }
+.maint-logo b { color: #E14943; }
 .gear-ico {
   width: 56px;
   height: 56px;
-  color: #3FB950;
+  color: #E14943;
   margin: 0 auto 1.5rem;
   animation: spinGear 12s linear infinite;
 }
@@ -51,12 +48,12 @@ body {
   to { transform: rotate(360deg); }
 }
 .maint-title {
-  font: 800 clamp(2rem, 5.2vw, 3.2rem)/1.1 var(--font-d);
+  font: 800 clamp(2rem, 5.2vw, 3.2rem)/1.1 'Space Grotesk', sans-serif;
   margin-bottom: 1.2rem;
   color: #ffffff;
 }
 .maint-title span {
-  color: #3FB950;
+  color: #E14943;
 }
 .maint-desc {
   color: rgba(244, 243, 239, 0.72);
@@ -73,20 +70,20 @@ body {
   margin: 0 auto 2.5rem;
 }
 .timer-card {
-  background: rgba(19, 31, 43, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(26, 17, 23, 0.75);
+  border: 1px solid rgba(225, 73, 67, 0.2);
   border-radius: 16px;
   padding: 1.4rem 0.8rem;
   backdrop-filter: blur(8px);
 }
 .timer-val {
-  font: 700 clamp(2rem, 4.5vw, 2.8rem)/1 var(--font-d);
-  color: #3FB950;
+  font: 700 clamp(2rem, 4.5vw, 2.8rem)/1 'Space Grotesk', sans-serif;
+  color: #E14943;
   font-variant-numeric: tabular-nums;
   display: block;
 }
 .timer-lbl {
-  font: 600 0.65rem/1 var(--font-d);
+  font: 600 0.65rem/1 'Space Grotesk', sans-serif;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(244, 243, 239, 0.55);
@@ -106,7 +103,7 @@ body {
   margin-bottom: 0.6rem;
 }
 .progress-header span:last-child {
-  color: #3FB950;
+  color: #E14943;
 }
 .progress-track {
   height: 9px;
@@ -117,19 +114,19 @@ body {
 .progress-fill {
   height: 100%;
   width: 73%;
-  background: linear-gradient(90deg, #2EA043, #3FB950);
+  background: linear-gradient(90deg, #C62828, #E14943);
   border-radius: 10px;
 }
 .work-card {
-  background: rgba(19, 31, 43, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(26, 17, 23, 0.6);
+  border: 1px solid rgba(225, 73, 67, 0.18);
   border-radius: 20px;
   padding: 1.8rem;
   text-align: start;
   margin-bottom: 2rem;
 }
 .work-card h3 {
-  font: 700 1.05rem/1 var(--font-d);
+  font: 700 1.05rem/1 'Space Grotesk', sans-serif;
   margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
@@ -153,24 +150,24 @@ body {
   gap: 0.7rem;
 }
 .work-badge {
-  font: 600 0.68rem/1 var(--font-d);
+  font: 600 0.68rem/1 'Space Grotesk', sans-serif;
   padding: 0.3rem 0.7rem;
   border-radius: 20px;
   letter-spacing: 0.06em;
 }
-.wb-complete { background: rgba(63, 185, 80, 0.15); color: #3FB950; border: 1px solid rgba(63, 185, 80, 0.3); }
+.wb-complete { background: rgba(225, 73, 67, 0.15); color: #E14943; border: 1px solid rgba(225, 73, 67, 0.3); }
 .wb-progress { background: rgba(210, 153, 34, 0.15); color: #D29922; border: 1px solid rgba(210, 153, 34, 0.3); }
 .wb-soon { background: rgba(255, 255, 255, 0.08); color: rgba(244, 243, 239, 0.5); border: 1px solid rgba(255, 255, 255, 0.12); }
 
 .notify-card {
-  background: rgba(19, 31, 43, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(26, 17, 23, 0.6);
+  border: 1px solid rgba(225, 73, 67, 0.18);
   border-radius: 20px;
   padding: 2rem 1.8rem;
   margin-bottom: 2.5rem;
 }
 .notify-card h3 {
-  font: 700 1.15rem/1 var(--font-d);
+  font: 700 1.15rem/1 'Space Grotesk', sans-serif;
   margin-bottom: 0.6rem;
   color: #fff;
   display: flex;
@@ -191,7 +188,7 @@ body {
 }
 .notify-form input {
   flex: 1;
-  background: rgba(10, 18, 25, 0.8);
+  background: rgba(13, 17, 23, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   padding: 0.85rem 1rem;
@@ -200,21 +197,21 @@ body {
 }
 .notify-form input:focus {
   outline: none;
-  border-color: #3FB950;
+  border-color: #E14943;
 }
 .btn-notify {
-  background: #3FB950;
-  color: #0D1117;
+  background: #E14943;
+  color: #ffffff;
   border: 0;
   border-radius: 12px;
   padding: 0.85rem 1.5rem;
-  font: 700 0.9rem/1 var(--font-d);
+  font: 700 0.9rem/1 'Space Grotesk', sans-serif;
   cursor: pointer;
   transition: transform 0.2s, background 0.2s;
   white-space: nowrap;
 }
 .btn-notify:hover {
-  background: #2EA043;
+  background: #C62828;
   transform: translateY(-2px);
 }
 .maint-footer {
@@ -223,7 +220,7 @@ body {
   margin-top: 1rem;
 }
 .maint-footer a {
-  color: #3FB950;
+  color: #E14943;
   text-decoration: none;
 }
 @media (max-width: 540px) {
@@ -274,14 +271,14 @@ body {
   </div>
 
   <div class="work-card">
-    <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3FB950" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>What We're Working On:</h3>
+    <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E14943" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>What We're Working On:</h3>
     <div class="work-list">
       <div class="work-item">
-        <div class="left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FB950" stroke-width="2.5" stroke-linecap="round"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Dyno telemetry system integration</span></div>
+        <div class="left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E14943" stroke-width="2.5" stroke-linecap="round"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Dyno telemetry system integration</span></div>
         <span class="work-badge wb-complete">Complete</span>
       </div>
       <div class="work-item">
-        <div class="left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FB950" stroke-width="2.5" stroke-linecap="round"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Enhanced service booking engine</span></div>
+        <div class="left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E14943" stroke-width="2.5" stroke-linecap="round"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Enhanced service booking engine</span></div>
         <span class="work-badge wb-complete">Complete</span>
       </div>
       <div class="work-item">
@@ -296,13 +293,13 @@ body {
   </div>
 
   <div class="notify-card">
-    <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3FB950" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg>Get Notified When We're Back</h3>
+    <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E14943" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg>Get Notified When We're Back</h3>
     <p>Enter your email and we'll notify you the moment ApexMoto is back online.</p>
     <form class="notify-form" onsubmit="handleNotify(event)">
       <input type="email" placeholder="your@email.com" required id="nEmail">
       <button class="btn-notify" type="submit">Notify Me →</button>
     </form>
-    <div id="notifyOk" style="display:none;margin-top:1rem;color:#3FB950;font-size:0.9rem;font-weight:600">
+    <div id="notifyOk" style="display:none;margin-top:1rem;color:#E14943;font-size:0.9rem;font-weight:600">
       You're on the list! We'll alert you the moment we launch.
     </div>
   </div>
@@ -313,7 +310,6 @@ body {
 </div>
 
 <script>
-// Live Countdown Timer
 let totalSeconds = 8 * 3600 + 44 * 60 + 47;
 function updateTimer() {
   if (totalSeconds <= 0) return;
