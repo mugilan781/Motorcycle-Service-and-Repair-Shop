@@ -204,7 +204,7 @@ body.lock{overflow:hidden}
 .cmp-table th b{display:block;font-size:1.05rem;color:var(--text);letter-spacing:0;text-transform:none;margin-top:.2rem}
 .cmp-table th small{display:block;font:500 .74rem/1.4 var(--font-b);letter-spacing:.02em;text-transform:none;color:var(--muted);margin-top:.3rem}
 .cmp-table .hl-cell{background:rgba(176,141,87,.1)}
-.ribbon{position:absolute;top:14px;left:62.5%;transform:translateX(-50%);background:var(--accent);color:#fff;font:700 .64rem/1 var(--font-d);letter-spacing:.16em;text-transform:uppercase;padding:.45rem 1.1rem;border-radius:8px;box-shadow:0 8px 20px -8px rgba(198,40,40,.6);white-space:nowrap}
+.ribbon{position:absolute;top:16px;inset-inline-end:18px;background:var(--accent);color:#fff;font:700 .65rem/1 var(--font-d);letter-spacing:.15em;text-transform:uppercase;padding:.4rem 1rem;border-radius:6px;box-shadow:0 6px 16px -4px rgba(198,40,40,.5);white-space:nowrap;z-index:2}
 .cmp-wrap{overflow:visible;padding-bottom:.4rem}
 
 .price-list li{display:flex;align-items:baseline;gap:.8rem;padding:.85rem 1.2rem;border-bottom:1px dashed var(--line)}
@@ -214,6 +214,7 @@ body.lock{overflow:hidden}
 .price-list .val{font:700 1rem/1 var(--font-d);color:var(--bronze);white-space:nowrap}
 
 .tier{padding:clamp(1.8rem,3vw,2.5rem);display:grid;gap:1.3rem}
+.tier .badge{justify-self:start;display:inline-flex;align-items:center;justify-content:center;padding:.45rem 1.1rem;border-radius:8px;font:700 .72rem/1 var(--font-d);letter-spacing:.16em;text-transform:uppercase;min-height:32px;box-sizing:border-box}
 .tier .price{font:700 clamp(2.4rem,4vw,3.2rem)/1 var(--font-d);font-variant-numeric:tabular-nums}
 .tier .price sup{font-size:1.3rem;color:var(--bronze);vertical-align:super}
 .tier .per{color:var(--muted);font-size:.85rem;margin-top:.3rem}
