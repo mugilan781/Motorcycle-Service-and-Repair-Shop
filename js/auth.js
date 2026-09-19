@@ -162,11 +162,22 @@
     });
   }
 
-  /* ---- Social buttons: UI only — no OAuth backend in this project ---- */
-  d.querySelectorAll("[data-social]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const form = btn.closest(".auth-card").querySelector(".auth-form");
-      if (form) note(form, "is-err", "Social sign-in is not connected yet — please continue with email.");
+  /* ---- Social buttons: open provider sites in a new tab ---- */
+  const SOCIAL_URLS = {
+    google: "https://google.com",
+    facebook: "https://facebook.com",
+    apple: "https://apple.com"
+  };
+  d.querySelectorAll("[data-social]").forEach(el => {
+    el.addEventListener("click", e => {
+      const key = (el.getAttribute("data-social") || "").toLowerCase();
+      const url = SOCIAL_URLS[key] || el.getAttribute("href");
+      if (!url || url === "#") return;
+      /* Anchor tags already navigate via href — just ensure new tab. */
+      if (el.tagName.toLowerCase() !== "a") {
+        e.preventDefault();
+        window.open(url, "_blank", "noopener");
+      }
     });
   });
 })();
