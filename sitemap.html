@@ -49,6 +49,16 @@
       <button class="icon-btn" data-toggle="dir" aria-pressed="false" aria-label="Toggle right-to-left layout">
         <span class="dir-lbl">RTL</span>
       </button>
+      <div class="profile-wrap">
+        <button class="icon-btn profile-btn" aria-expanded="false" aria-haspopup="true" aria-controls="profileMenu" aria-label="Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+        </button>
+        <ul class="profile-menu" id="profileMenu" role="menu" aria-label="Account">
+          <li class="pm-head" aria-hidden="true">Profile</li>
+          <li><a href="login.html" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/></svg>Login</a></li>
+          <li><a href="signup.html" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/><path d="M19 8v6M22 11h-6"/></svg>Signup</a></li>
+        </ul>
+      </div>
       <a href="contact.html#book" class="btn btn-primary btn-sm nav-cta">Book Service</a>
       <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navDrawer" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
@@ -75,6 +85,10 @@
       <button class="icon-btn" data-toggle="dir" aria-pressed="false" aria-label="Toggle right-to-left layout">
         <span class="dir-lbl">RTL</span>
       </button>
+    </div>
+    <div class="drawer-auth">
+      <a href="login.html" class="btn btn-ghost btn-sm">Login</a>
+      <a href="signup.html" class="btn btn-primary btn-sm">Signup</a>
     </div>
     <a href="contact.html#book" class="btn btn-primary btn-block">Book Service</a>
   </div>

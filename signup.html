@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account — ApexMoto | Premium Motorcycle Service</title>
+<meta name="description" content="Create an ApexMoto account to book services faster, track your bike's service history and get rider-only offers.">
+<meta property="og:title" content="Create Account — ApexMoto">
+<meta property="og:description" content="Create an account to get started with ApexMoto.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D1117'/%3E%3Cpath d='M16 5.5l9 5.2v10.6l-9 5.2-9-5.2V10.7z' fill='none' stroke='%23B08D57' stroke-width='1.8'/%3E%3Cpath d='M12.4 21L16 11l3.6 10M13.7 17.6h4.6' fill='none' stroke='%23C62828' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("amw-theme");if(t)document.documentElement.dataset.theme=t;var dr=localStorage.getItem("amw-dir");if(dr)document.documentElement.setAttribute("dir",dr)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<span class="auth-glow auth-glow-g1" aria-hidden="true"></span>
+<span class="auth-glow auth-glow-g2" aria-hidden="true"></span>
+
+<main id="main" class="auth-page">
+  <div class="auth-card auth-card-wide">
+    <a href="index.html" class="brand auth-brand" aria-label="ApexMoto — home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M16 3l11 6.35v12.7L16 28.4 5 22.05V9.35z" stroke="currentColor" stroke-width="1.6"/><path d="M12.4 21L16 10.6 19.6 21M13.6 17.6h4.8" stroke="#E14943" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-text">APEX<b>MOTO</b><small>RIDE PERFECT</small></span>
+    </a>
+
+    <h1 class="auth-title">Create Account</h1>
+    <p class="auth-sub">Create an account to get started.</p>
+
+    <form id="signupForm" class="auth-form" novalidate>
+      <div class="field">
+        <label for="suName">Full Name</label>
+        <input id="suName" name="name" type="text" placeholder="Alex Carter" autocomplete="name" required>
+        <span class="f-err">Please enter your full name.</span>
+      </div>
+
+      <div class="field">
+        <label for="suEmail">Email Address</label>
+        <input id="suEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <span class="f-err">Enter a valid email address.</span>
+      </div>
+
+      <div class="field">
+        <label for="suPhone">Phone Number</label>
+        <input id="suPhone" name="phone" type="tel" placeholder="(312) 555-0147" autocomplete="tel" required>
+        <span class="f-err">Enter a valid phone number.</span>
+      </div>
+
+      <div class="field">
+        <label for="suPassword">Password</label>
+        <div class="auth-pass">
+          <input id="suPassword" name="password" type="password" placeholder="Minimum 8 characters" autocomplete="new-password" required>
+          <button type="button" class="auth-eye" data-target="suPassword" aria-label="Show password" aria-pressed="false">
+            <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7.5 11-7.5S23 12 23 12s-4 7.5-11 7.5S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            <svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.5 10.5 0 0 1 12 19.5c-7 0-11-7.5-11-7.5a21.6 21.6 0 0 1 5.06-5.94M9.9 4.24A10.4 10.4 0 0 1 12 4.5c7 0 11 7.5 11 7.5a21.7 21.7 0 0 1-2.16 3.19M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M2 2l20 20"/></svg>
+          </button>
+        </div>
+        <span class="f-err">Password must be at least 8 characters.</span>
+      </div>
+
+      <div class="field">
+        <label for="suConfirm">Confirm Password</label>
+        <div class="auth-pass">
+          <input id="suConfirm" name="confirm" type="password" placeholder="Repeat your password" autocomplete="new-password" required>
+          <button type="button" class="auth-eye" data-target="suConfirm" aria-label="Show password" aria-pressed="false">
+            <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7.5 11-7.5S23 12 23 12s-4 7.5-11 7.5S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            <svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.5 10.5 0 0 1 12 19.5c-7 0-11-7.5-11-7.5a21.6 21.6 0 0 1 5.06-5.94M9.9 4.24A10.4 10.4 0 0 1 12 4.5c7 0 11 7.5 11 7.5a21.7 21.7 0 0 1-2.16 3.19M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M2 2l20 20"/></svg>
+          </button>
+        </div>
+        <span class="f-err">Passwords do not match.</span>
+      </div>
+
+      <label class="auth-terms" for="suTerms">
+        <input id="suTerms" type="checkbox" required>
+        <span>I agree to the <a href="terms.html">Terms &amp; Conditions</a> and <a href="privacy.html">Privacy Policy</a>.</span>
+      </label>
+
+      <button type="submit" class="btn btn-primary auth-submit">Create Account <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+    </form>
+
+    <div class="auth-div" aria-hidden="true">or sign up with</div>
+    <div class="auth-social">
+      <button type="button" class="auth-soc" data-social="google">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
+        Google
+      </button>
+      <button type="button" class="auth-soc" data-social="facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1877F2" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.8V24C19.62 23.1 24 18.1 24 12.07z"/></svg>
+        Facebook
+      </button>
+    </div>
+
+    <p class="auth-swap">Already have an account? <a href="login.html">Sign In</a></p>
+  </div>
+</main>
+
+<script src="js/auth.js" defer></script>
+</body>
+</html>

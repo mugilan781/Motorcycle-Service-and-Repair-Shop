@@ -268,4 +268,21 @@
       items.forEach(it => it.classList.toggle("hide", q && !it.textContent.toLowerCase().includes(q)));
     });
   }
+
+  /* Profile / account dropdown (auth integration — additive only). */
+  const pWrap = d.querySelector(".profile-wrap");
+  const pBtn = d.querySelector(".profile-btn");
+  const pMenu = d.querySelector(".profile-menu");
+  if (pWrap && pBtn && pMenu) {
+    const setOpen = open => {
+      pWrap.classList.toggle("open", open);
+      pBtn.setAttribute("aria-expanded", String(open));
+    };
+    pBtn.addEventListener("click", e => { e.stopPropagation(); setOpen(!pWrap.classList.contains("open")); });
+    d.addEventListener("click", e => { if (!pWrap.contains(e.target)) setOpen(false); });
+    d.addEventListener("keydown", e => {
+      if (e.key === "Escape" && pWrap.classList.contains("open")) { setOpen(false); pBtn.focus({ preventScroll:true }); }
+    });
+    pMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setOpen(false)));
+  }
 })();
