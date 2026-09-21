@@ -358,7 +358,7 @@ body.lock{overflow:hidden}
 .nf-hero{min-height:88vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:calc(var(--nav-h) + 3rem) 0 4rem;background:radial-gradient(52% 90% at 85% 0%,rgba(198,40,40,.12),transparent 60%),radial-gradient(rgba(140,150,159,.13) 1px,transparent 1px),linear-gradient(180deg,#0F141B,#0D1117);background-size:auto,22px 22px,auto;border-bottom:1px solid rgba(140,150,159,.16)}
 .nf-hero h1{color:#ECEEF1}
 .nf-hero .lead{color:#8C969F}
-.nf-hero .metal{background:linear-gradient(120deg,#F4F3EF 10%,#8C969F 42%,#F4F3EF 58%,#767f88 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nf-hero .metal{color:#F3CA7E;background:none;-webkit-text-fill-color:initial;-webkit-background-clip:initial;background-clip:initial}
 .nf-hero .ghost-word{-webkit-text-stroke-color:rgba(140,150,159,.28)}
 .nf-hero .nf-search input{background:rgba(140,150,159,.08);border-color:rgba(140,150,159,.32);color:#ECEEF1}
 .nf-hero .nf-search input::placeholder{color:#8C969F}
