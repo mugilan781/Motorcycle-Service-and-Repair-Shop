@@ -121,8 +121,6 @@
 }
 @media (max-width:900px){
   .hs2-grid,.book-grid{grid-template-columns:1fr}
-  .hs2-media{min-height:400px;margin-bottom:2rem}
-  .hs2-main{width:72%}
   .contact-grid-page{grid-template-columns:1fr}
   .side-card{position:static}
   .pricing-tables{grid-template-columns:1fr}
